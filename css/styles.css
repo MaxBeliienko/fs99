@@ -14,12 +14,18 @@ a {
     color: #111;
 }
 
+/* Header */
 .logo {
         font-size: 18px;
         font-style: italic;
         font-weight: 700;
         line-height: 1.11;
-        letter-spacing: -0.54px;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+}
+
+.logo-span {
+    font-style: italic;
 }
 
 .header-nav-item a {
@@ -27,8 +33,10 @@ a {
         font-style: normal;
         font-weight: 500;
         line-height: 1.14;
-        letter-spacing: -0.28px;
+        letter-spacing: -0.02em;
 }
+
+/* Section1 */
 
 .sect1 {
     background-color: #4C4C4C;
@@ -39,5 +47,268 @@ a {
         font-size: 28px;
         font-weight: 500;
         line-height: 1.21;
-        letter-spacing: -0.84px;
+        letter-spacing: -0.03em;
+}
+
+.sect1-button {
+    background-color: #FD9222;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.sect1-link1 {
+    color: #FFF; 
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.sect1-link2 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: -0.03em;
+}
+
+/* Section2 */
+
+.sect2 {
+    background-color: #1E1823;
+}
+
+.sect2-item h3 {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.sect2-item p {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+/* Section3 */
+
+.sect3 {
+    background-color: #FFFFFF;
+}
+
+.sect3-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.sect3-header-span {
+    color: #FD9222;
+}
+
+.sect3-item-header-type1 {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.sect3-item-header-type2 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+/* Section4 */
+
+.sect4-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.sect4-header-span {
+    color: #FD9222;
+}
+
+.sect4-item-header {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+.sect4-item {
+    list-style-type: disc;
+    color: #4C4C4C;;
+}
+.sect4-item p {
+    color: #111;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+/* Section5 */
+
+.sect5-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+        line-height: 1.16;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+}
+
+.sect5-header-span {
+    color: #FD9222;
+}
+
+.sect5-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.sect5-item p {
+    color: rgba(17, 17, 17, 0.70);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+}
+
+.sect5-item button {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Section6 */
+.sect6-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.sect6-header-span {
+    color: #FD9222;
+}
+
+.sect6-item-header {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+/* Section7 */
+
+.sect7-header {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.16;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+}
+
+.sect7-header-span {
+    color: #FD9222;
+}
+.sect7-item {
+    background-color: #FFF;
+}
+
+.sect7-item-list h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+.sect7-item-list p {
+    color: rgba(17, 17, 17, 0.70);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+.sect7-button {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* footer */
+.footer {
+    background-color: #1E1823;;
+}
+
+.footer-main-text {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+}
+
+.footer-main-text-span {
+        color: #FD9222;
+    }
+
+.footer-socnetworks {
+    color: #FFF;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.28;
+}
+
+.footer-contacts {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
+}
+
+.address-item a {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+}
+
+.footer-nav a {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
 }

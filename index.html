@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -20,7 +20,8 @@
   <body>
     <header>
       <a class="logo" href="./index.html"
-        >SIMPLY CHOCOLATE <img src="./images/chocolate.svg" alt="SIte-logo"
+        ><span class="logo-span">SIMPLY </span>CHOCOLATE
+        <img src="./images/chocolate.svg" alt="SIte-logo"
       /></a>
       <nav>
         <ul class="header-nav-item">
@@ -28,10 +29,10 @@
             <a href="./index.html">Home </a>
           </li>
           <li>
-            <a href="#">How it&apos;s made?</a>
+            <a href="#how-its-made">How it&apos;s made?</a>
           </li>
           <li>
-            <a href="#">Chocolate is loved</a>
+            <a href="#chocolate-is-loved">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
@@ -44,20 +45,22 @@
       </ul>
     </header>
     <main>
+      <!-- Section1 -->
       <section class="sect1">
         <h1 class="sect1-header">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <a href="#">How it’s made</a>
-        <a href="#">scroll down </a>
+        <button class="sect1-button" type="button">Buy now</button>
+        <a class="sect1-link1" href="#how-its-made">How it&apos;s made</a>
+        <a class="sect1-link2" href="#">scroll down </a>
         <!-- maybe jpg -->
       </section>
 
-      <section>
+      <!-- Section2 -->
+      <section class="sect2">
         <h2 hidden>Rututu</h2>
-        <ul>
+        <ul class="sect2-item">
           <li>
             <h3>Unsurpassed taste</h3>
             <p>
@@ -89,8 +92,12 @@
         </ul>
       </section>
 
-      <section>
-        <h2>It all adds up to one exceptional taste sensation</h2>
+      <!-- Section3 -->
+      <section class="sect3">
+        <h2 class="sect3-header">
+          It all adds up to one exceptional
+          <span class="sect3-header-span">taste</span> sensation
+        </h2>
         <ul>
           <li>
             <img
@@ -99,7 +106,7 @@
               width="214"
               height="160"
             />
-            <h3>MILK CHOCOLATE</h3>
+            <h3 class="sect3-item-header-type1">MILK CHOCOLATE</h3>
           </li>
           <li>
             <img
@@ -108,7 +115,7 @@
               width="214"
               height="160"
             />
-            <h3>MILK</h3>
+            <h3 class="sect3-item-header-type2">MILK</h3>
           </li>
           <li>
             <img
@@ -117,7 +124,7 @@
               width="214"
               height="160"
             />
-            <h3>NUTS</h3>
+            <h3 class="sect3-item-header-type1">NUTS</h3>
           </li>
           <li>
             <img
@@ -126,7 +133,7 @@
               width="214"
               height="160"
             />
-            <h3>SEMI - SWEET CHOCOLATE</h3>
+            <h3 class="sect3-item-header-type2">SEMI - SWEET CHOCOLATE</h3>
           </li>
           <li>
             <img
@@ -135,7 +142,7 @@
               width="214"
               height="160"
             />
-            <h3>CACAO</h3>
+            <h3 class="sect3-item-header-type1">CACAO</h3>
           </li>
           <li>
             <img
@@ -144,7 +151,7 @@
               width="214"
               height="160"
             />
-            <h3>RASPBERRY</h3>
+            <h3 class="sect3-item-header-type2">RASPBERRY</h3>
           </li>
           <li>
             <img
@@ -153,18 +160,21 @@
               width="214"
               height="160"
             />
-            <h3>COCONUT OIL</h3>
+            <h3 class="sect3-item-header-type1">COCONUT OIL</h3>
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2>How it&apos;s made?</h2>
+      <!-- Section4 -->
+      <section id="how-its-made">
+        <h2 class="sect4-header">
+          How it&apos;s <span class="sect4-header-span">made</span>?
+        </h2>
         <img src="images/sect3img1.jpg" alt="" width="600" height="400" />
-        <h3>
+        <h3 class="sect4-item-header">
           Try our chocolates today and discover the perfect balance of flavor
         </h3>
-        <ul>
+        <ul class="sect4-item">
           <li>
             <p>
               Heat the milk in a saucepan without bringing it to a boil. Add
@@ -195,9 +205,12 @@
         </ul>
       </section>
 
+      <!-- Section5 -->
       <section>
-        <h2>Our products</h2>
-        <ul>
+        <h2 class="sect5-header">
+          Our <span class="sect5-header-span">products</span>
+        </h2>
+        <ul class="sect5-item">
           <li>
             <img
               src="/images/sect4img1.jpg"
@@ -284,8 +297,11 @@
         </ul>
       </section>
 
+      <!-- Section6 -->
       <section>
-        <h2>Top sellers</h2>
+        <h2 class="sect6-header">
+          <span class="sect6-header-span">Top</span> sellers
+        </h2>
         <ul>
           <li>
             <img
@@ -294,7 +310,7 @@
               width="368"
               height="464"
             />
-            <h3>CHOCOLATE WITH NUTS</h3>
+            <h3 class="sect6-item-header">CHOCOLATE WITH NUTS</h3>
           </li>
           <li>
             <img
@@ -303,7 +319,7 @@
               width="368"
               height="464"
             />
-            <h3>CHOCOLATE WITH FRUITS</h3>
+            <h3 class="sect6-item-header">CHOCOLATE WITH FRUITS</h3>
           </li>
           <li>
             <img
@@ -312,15 +328,18 @@
               width="368"
               height="464"
             />
-            <h3>DARK CHOCOLATE</h3>
+            <h3 class="sect6-item-header">DARK CHOCOLATE</h3>
           </li>
         </ul>
       </section>
 
-      <section>
-        <h2>Chocolate is loved</h2>
-        <ul>
-          <li>
+      <!-- Section7 -->
+      <section id="chocolate-is-loved">
+        <h2 class="sect7-header">
+          <span class="sect7-header-span">Chocolate</span> is loved
+        </h2>
+        <ul class="sect7-item">
+          <li class="sect7-item-list">
             <img
               src="/images/sect6img1.jpg"
               alt="Victoria Dobrzhanska"
@@ -333,7 +352,7 @@
               wafer, covered in a thin layer chocolate.
             </p>
           </li>
-          <li>
+          <li class="sect7-item-list">
             <img
               src="/images/sect6img2.jpg"
               alt="Nazar Babenko"
@@ -347,7 +366,7 @@
               is good.
             </p>
           </li>
-          <li>
+          <li class="sect7-item-list">
             <img
               src="/images/sect6img3.jpg"
               alt="Olena Kampusch"
@@ -362,12 +381,15 @@
             </p>
           </li>
         </ul>
-        <button type="button">Leave a review</button>
+        <button class="sect7-button" type="button">Leave a review</button>
       </section>
     </main>
-    <footer>
-      <p>Chocolate a delicious cure for a bad day</p>
-      <p>Social networks</p>
+    <footer class="footer">
+      <p class="footer-main-text">
+        <span class="footer-main-text-span">Chocolate</span> a delicious cure
+        for a bad day
+      </p>
+      <p class="footer-socnetworks">Social networks</p>
       <ul>
         <li><a href="" target="_blank" rel="noopener noreferrer">Insta</a></li>
         <li><a href="" target="_blank" rel="noopener noreferrer">Fb</a></li>
@@ -375,8 +397,9 @@
           <a href="" target="_blank" rel="noopener noreferrer">Twitter</a>
         </li>
       </ul>
+      <p class="footer-contacts">Contact us</p>
       <address>
-        <ul>
+        <ul class="address-item">
           <li><a href="tel:+380684439426">+380 (68) 443-94-26</a></li>
           <li>
             <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com </a>
@@ -384,10 +407,10 @@
         </ul>
       </address>
       <nav>
-        <ul>
+        <ul class="footer-nav">
           <li><a href="/index.html">Home</a></li>
-          <li><a href="">How it’s made?</a></li>
-          <li><a href="">Chocolate is loved</a></li>
+          <li><a href="#how-its-made">How it&apos;s made?</a></li>
+          <li><a href="#chocolate-is-loved">Chocolate is loved</a></li>
         </ul>
       </nav>
     </footer>
