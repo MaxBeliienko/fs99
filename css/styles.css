@@ -51,6 +51,7 @@ a {
 }
 
 .sect1-button {
+    font-family: inherit;
     background-color: #FD9222;
     color: #FFFFFF;
     font-size: 14px;
@@ -59,11 +60,20 @@ a {
     cursor: pointer;
 }
 
+.sect1-button:hover, .sect1-button:focus {
+    color: #FD9222;
+    background-color: #FCF1E0;
+}
+
 .sect1-link1 {
     color: #FFF; 
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
+}
+
+.sect1-link1:hover, .sect1-link1:focus {
+    color: #FD9222;
 }
 
 .sect1-link2 {
@@ -74,10 +84,28 @@ a {
     letter-spacing: -0.03em;
 }
 
+.sect1-link2:hover,
+.sect1-link2:focus {
+    color: #FD9222;
+}
+
 /* Section2 */
 
 .sect2 {
     background-color: #1E1823;
+}
+
+.sect2-header {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .sect2-item h3 {
@@ -195,10 +223,12 @@ a {
 }
 
 .sect5-item button {
+    font-family: inherit;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    cursor: pointer;
 }
 
 /* Section6 */
@@ -258,9 +288,16 @@ a {
 }
 
 .sect7-button {
+    font-family: inherit;
     font-size: 18px;
     font-weight: 600;
     line-height: normal;
+    cursor: pointer;
+}
+
+.sect7-button:hover, .sect7-button:focus {
+    color: #FFFFFF;
+    background-color: #FD9222;
 }
 
 /* footer */
@@ -294,6 +331,10 @@ a {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.28;
+}
+
+.address {
+    font-style: inherit;
 }
 
 .address-item a {
