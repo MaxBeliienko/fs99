@@ -30,9 +30,10 @@ button {
  }
 
  .container {
-     width: 1200px;
+     width: 1166px;
      margin: 0 auto;
-     padding: 0 15px;
+     padding-left: 15px;
+     padding-right: 15px;
  }
 /* Header */
 .header {
@@ -75,6 +76,7 @@ button {
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: -0.02em;
+        display: block;
 }
 
 .header-socnetwork {
@@ -88,10 +90,13 @@ button {
 
 .sect1 {
     background-color: #4C4C4C;
+    margin-bottom: 80px;
+    border-radius: 30px;
+    padding: 381px 40px 40px 40px;
 }
 
 .sect1-container {
-   padding: 381px 40px 40px 40px;
+   
    max-width: 1136px;
 }
 
@@ -163,6 +168,7 @@ button {
 .sect2 {
     background-color: #1E1823;
     padding: 50px 50px;
+    margin-bottom: 120px;
 }
 
 .sect2-header {
@@ -209,8 +215,9 @@ button {
 
 .sect3 {
     background-color: #FFFFFF;
-    padding: 120px 0;
+    padding-bottom: 120px;
 }
+
 
 .sect3-header {
     text-align: center;
@@ -271,6 +278,7 @@ button {
     padding-bottom: 120px;
 }
 
+
 .sect4-header {
     text-align: center;
     font-size: 24px;
@@ -317,46 +325,79 @@ button {
 }
 
 /* Section5 */
+.sect5 {
+    padding-bottom: 120px;
+}
+
 
 .sect5-header {
     text-align: center;
     font-size: 24px;
     font-weight: 600;
-        line-height: 1.16;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .sect5-header-span {
     color: #FD9222;
 }
 
-.sect5-item h3 {
+.sect5-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 18px;
+}
+
+.sect5-list-item {
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FFF;
+    width: calc((100% - 54px) / 4);
+    padding: 32px 20px;
+}
+
+.sect5-item-container {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.sect5-list h3 {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.33;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    margin-bottom: 2px;
 }
 
-.sect5-item p {
+.sect5-list p {
     color: rgba(17, 17, 17, 0.70);
     font-size: 12px;
     font-weight: 400;
     line-height: 1.16;
     letter-spacing: -0.02em;
+    margin-bottom: 18px;
 }
 
-.sect5-item button {
+.sect5-list button {
     font-family: inherit;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background-color: #FAFAFA;
 }
 
 /* Section6 */
+.sect6 {
+    padding-bottom: 120px;
+}
+
 .sect6-header {
     text-align: center;
     font-size: 24px;
@@ -364,10 +405,21 @@ button {
     line-height: 1.16;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .sect6-header-span {
     color: #FD9222;
+}
+
+.sect6-list {
+    display: flex;
+    gap: 16px;
+    
+}
+
+.sect6-list-item {
+    width: calc((100% - 32px) / 3);
 }
 
 .sect6-item-header {
@@ -376,9 +428,17 @@ button {
     line-height: 1.33;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
 }
 
 /* Section7 */
+.chocolate-is-loved {
+    padding-bottom: 120px;
+}
 
 .sect7-header {
         text-align: center;
@@ -387,13 +447,27 @@ button {
         line-height: 1.16;
         letter-spacing: -0.03em;
         text-transform: uppercase;
+        margin-bottom: 91px;
 }
 
 .sect7-header-span {
     color: #FD9222;
 }
 .sect7-item {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 50px;
+}
+.sect7-item-list {
     background-color: #FFF;
+    width: calc((100% - 56px) / 3);
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    padding: 56px 24px 24px 24px;
+}
+
+.sect7-list-subtitle {
+    margin-bottom: 24px;
 }
 
 .sect7-item-list h3 {
@@ -418,6 +492,12 @@ button {
     font-weight: 600;
     line-height: normal;
     cursor: pointer;
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
 }
 
 .sect7-button:hover, .sect7-button:focus {
@@ -427,7 +507,15 @@ button {
 
 /* footer */
 .footer {
-    background-color: #1E1823;;
+    background-color: #1E1823;
+    padding-top: 50px;
+    padding-bottom: 86px;
+}
+.footer-conteiner-up {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    padding-bottom: 50px;
+    margin-bottom: 24px;
+    display: flex;
 }
 
 .footer-main-text {
@@ -436,11 +524,17 @@ button {
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.02em;
+    max-width: 300px;
+    margin-right: auto;
 }
 
 .footer-main-text-span {
-        color: #FD9222;
-    }
+    color: #FD9222;
+}
+
+.footer-container-socnetworks {
+    margin-right: 50px;
+}
 
 .footer-socnetworks {
     color: #FFF;
@@ -452,10 +546,10 @@ button {
 
 .footer-contacts {
     color: #FFF;
-    text-align: center;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.28;
+    margin-bottom: 14px;
 }
 
 .address {
@@ -469,6 +563,15 @@ button {
     font-weight: 400;
     line-height: 1.28;
     letter-spacing: -0.02em;
+}
+
+.footer-address-item {
+    margin-bottom: 4px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 24px;
 }
 
 .footer-nav a {
