@@ -43,6 +43,7 @@ button {
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: baseline;
 }
 
 .header-nav {
@@ -86,6 +87,30 @@ button {
     margin-left: 90px;
 }
 
+.header-socnetwork-item {
+    width: 40px;
+    height: 40px;
+}
+
+.header-socnetwork-item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    
+}
+
+.header-socnetwork-icon {
+    fill: #111111;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-socnetwork-icon:hover {
+    fill: #FD9222;
+}
 /* Section1 */
 
 .sect1 {
@@ -93,11 +118,17 @@ button {
     margin-bottom: 80px;
     border-radius: 30px;
     padding: 381px 40px 40px 40px;
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4), 
+        rgba(17, 17, 17, 0.4)), url(../images/back-chocolate.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .sect1-container {
-   
    max-width: 1136px;
+   
 }
 
 .sect1-header {
@@ -155,7 +186,27 @@ button {
     line-height: 1.28;
     letter-spacing: -0.03em;
     margin-left: auto;
-   
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.sect1-link2::after {
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-color: #FFF;
+    border-radius: 50%;
+    background-image: url(../images/sect1icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sect1-link2:hover::after {
+    background-color: #FD9222;
+    background-image: url(../images/sect1icon-hover.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 .sect1-link2:hover,
@@ -193,6 +244,21 @@ button {
 
 .sect2-item-list {
     width: calc((100% - 176px) / 3);
+}
+
+.sect2-icon-div {
+    width: 62px;
+    height: 62px;
+    border-radius: 365px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sect2-icon {
+    fill: #FD9222;
 }
 
 .sect2-item-header {
@@ -312,6 +378,18 @@ button {
 
 .sect4-list-item {
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.sect4-list-item::before {
+    content: "";
+    background-image: url(../images/item-marker.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 8px;
+    height: 8px;
+   margin-right: 8px;
 }
 
 .sect4-list {
@@ -420,6 +498,36 @@ button {
 
 .sect6-list-item {
     width: calc((100% - 32px) / 3);
+}
+
+.sect6-cont-hid {
+    position: relative;
+    overflow: hidden;
+}
+
+.sect6-cont-hid:hover .sect6-cont-text-hid{
+    transform: translateX(0);
+}
+
+.sect6-cont-text-hid {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    display: flex;
+    align-items: center;
+    padding: 178px 40px 132px 40px;
+    border-radius: 15px 15px 0px 0px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+        backdrop-filter: blur(7.5px);
+    
 }
 
 .sect6-item-header {
