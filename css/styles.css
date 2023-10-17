@@ -248,6 +248,18 @@ button {
 
 .sect2-item-list {
     width: calc((100% - 176px) / 3);
+    position: relative;
+}
+
+.sect2-item-list:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -44px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 124px;
+    background-color: rgba(255, 255, 255, 0.50);
 }
 
 .sect2-icon-div {
@@ -381,19 +393,25 @@ button {
 }
 
 .sect4-list-item {
+    position: relative;
+    padding-left: 16px;
     margin-bottom: 24px;
-    display: flex;
-    align-items: center;
+}
+
+.sect4-item-list-text {
+    max-width: 409px;
 }
 
 .sect4-list-item::before {
     content: "";
-    background-image: url(../images/item-marker.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 5px;
     width: 8px;
     height: 8px;
-   margin-right: 8px;
+    background-color: #4C4C4C;
+    border-radius: 50%;
+    border: 1px solid #ECEDED;
 }
 
 .sect4-list {
@@ -571,11 +589,19 @@ button {
     margin-bottom: 50px;
 }
 .sect7-item-list {
+    position: relative;
     background-color: #FFF;
     width: calc((100% - 56px) / 3);
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
     padding: 56px 24px 24px 24px;
+}
+
+.sect7-item-img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
 }
 
 .sect7-list-subtitle {
@@ -610,6 +636,7 @@ button {
     background-color: transparent;
     display: block;
     margin: 0 auto;
+    transition: background-color 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .sect7-button:hover, .sect7-button:focus {
