@@ -553,7 +553,8 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <!-- Modal -->
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg width="28" height="28">
@@ -564,21 +565,68 @@
           LEAVE A REVIEW ABOUT<br />
           <span class="footer-main-text-span">OUR CHOCOLATE</span>
         </p>
-        <form action="">
-          <div>
-            <label class="modal-label" for="user-email">Name</label>
-            <input type="text" name="user-email" id="user-email" />
+        <form name="user-info">
+          <div class="modal-form-wrap">
+            <label class="modal-label" for="user-name">Name </label>
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              class="modal-form-input"
+            />
+            <svg width="24" height="24" class="modal-form-icon">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
+          </div>
+          <div class="modal-form-wrap">
+            <label class="modal-label" for="user-mail">Email </label>
+            <input
+              type="email"
+              name="user-mail"
+              id="user-mail"
+              class="modal-form-input"
+            />
+            <svg width="24" height="24" class="modal-form-icon">
+              <use href="./images/sprite.svg#icon-email-user"></use>
+            </svg>
+          </div>
+          <div class="modal-form-wrap">
+            <label class="modal-label" for="user-phone">Phone number </label>
+            <input
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              class="modal-form-input"
+            />
+            <svg width="24" height="24" class="modal-form-icon">
+              <use href="./images/sprite.svg#icon-phone-user"></use>
+            </svg>
           </div>
           <div>
-            <label class="modal-label" for="user-phone">Email </label>
-            <input type="text" name="user-phone" id="user-phone" />
+            <label for="comment" class="modal-label">Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="modal-form-textarea"
+              placeholder="Enter text"
+            ></textarea>
           </div>
-          <div>
-            <label class="modal-label" for="user-name">Phone number</label>
-            <input type="text" name="user-name" id="user-name" />
+          <div class="modal-form-checkbox-wrap">
+            <input
+              type="checkbox"
+              name="modal-checkbox"
+              value="modal-checkbox"
+              id="modal-checkbox"
+              class="modal-form-checkbox"
+            />
+            <label class="modal-form-checkbox-label" for="modal-checkbox"
+              >I accept the terms and conditions of thea
+              <a href="" class="modal-checkbox-label-link"
+                >Privacy Policy</a
+              ></label
+            >
           </div>
-
-          <textarea name="" id=""></textarea>
+          <button type="submit" class="modal-form-btn">Send</button>
         </form>
       </div>
     </div>

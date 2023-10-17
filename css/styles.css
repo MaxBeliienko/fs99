@@ -703,6 +703,10 @@ button {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .modal {
@@ -728,15 +732,127 @@ button {
  }
 
  .modal-close-btn {
+    width: 28px;
+    height: 28px;
+    padding: 0;
     border: none;
+    background-color: transparent;
     position: absolute;
     top: 24px;
     right: 24px;
  }
 
  .modal-label {
+    display: block;
     color: rgba(64, 64, 64, 0.30);
     font-size: 14px;
     font-weight: 400;
     letter-spacing: -0.02em;
+    margin-bottom: 8px;
+ }
+
+ .modal-form-input {
+    width: 100%;
+    height: 68px;
+    padding: 22px 24px 22px 62px;
+    margin-bottom: 18px;
+    background-color: inherit;
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .modal-form-wrap {
+    position: relative;
+ }
+ 
+ .modal-form-icon {
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    fill: transparent;
+    stroke: #404040;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .modal-form-input:hover, .modal-form-input:focus, .modal-form-input:active {
+    border-color: #FD9222;
+ }
+
+.modal-form-input:active + .modal-form-icon {
+    stroke:#FD9222;
+ }
+
+ .modal-form-input:focus +.modal-form-icon {
+     stroke: #FD9222;
+ }
+
+ .modal-form-input:hover +.modal-form-icon {
+     stroke: #FD9222;
+ }
+
+ .modal-form-textarea {
+    resize: none;
+    width: 100%;
+    height: 137px;
+    padding: 22px 24px;
+    margin-bottom: 20px;
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    outline: transparent;
+    background-color: inherit;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+.modal-form-checkbox-wrap {
+    display: flex;
+    margin-bottom: 41px;
+    gap: 12px;
+}
+
+ .modal-form-textarea::placeholder {
+    color: rgba(64, 64, 64, 0.30);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02em;
+ }
+
+ .modal-form-textarea:hover,
+ .modal-form-textarea:focus,
+ .modal-form-textarea:active {
+     border-color: #FD9222;
+ }
+
+
+ .modal-form-checkbox-label {
+    color: rgba(64, 64, 64, 0.60);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.02em;
+ }
+
+ .modal-checkbox-label-link {
+    color: #FD9222;
+    text-decoration: underline;
+ }
+ 
+ .modal-form-btn {
+    padding: 14px 40px;
+    border: none;
+    border-radius: 100px;
+    background-color: #FD9222;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+ }
+
+ .is-open {
+     opacity: 1;
+     visibility: visible;
+     pointer-events: auto;
  }
