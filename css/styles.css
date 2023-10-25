@@ -27,6 +27,7 @@ button {
 }
  img {
     display: block;
+    max-width: 100%;
  }
 
  input {
@@ -34,64 +35,59 @@ button {
  }
 
  .container {
-     width: 1166px;
+     width: 335px;
      margin: 0 auto;
-     padding-left: 15px;
-     padding-right: 15px;
+     padding: 0 20px;
  }
-/* Header */
-.header {
-    padding: 24px 32px;
-}
 
+/* Header */
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: baseline;
-}
-
-.header-nav {
-    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
 }
 
 .logo {
-        font-size: 18px;
+        color: #111;
+        font-size: 14px;
         font-style: italic;
         font-weight: 700;
-        line-height: 1.11;
+        line-height: 1.29;
         letter-spacing: -0.03em;
         text-transform: uppercase;
         display: flex;
         gap: 4px;
-        margin-right: 365px;
+        
 }
 
-.logo-span {
-    font-style: italic;
+.header-menu-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
 }
 
 .header-nav-item {
-    display: flex;
-    gap: 24px;
+    display: none;
 }
 
-.header-nav-item a {
+/* .header-nav-item a {
     font-size: 14px;
         font-style: normal;
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: -0.02em;
         display: block;
-}
+} */
 
 .header-socnetwork {
-    display: flex;
-    margin-left: auto;
+    display: none;
+    /* margin-left: auto;
     gap: 14px;
-    margin-left: 90px;
+    margin-left: 90px; */
 }
 
-.header-socnetwork-item {
+/* .header-socnetwork-item {
     width: 40px;
     height: 40px;
 }
@@ -113,41 +109,45 @@ button {
 }
 
 .header-socnetwork-icon:hover {
-    fill: #FD9222;
-}
-/* Section1 */
+    fill: #FD9222; }*/
 
+/* Section1 */
 .sect1 {
+    padding: 0 20px;
+}
+.sect1-container {
     background-color: #4C4C4C;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     border-radius: 30px;
-    padding: 381px 40px 40px 40px;
-    background-image: linear-gradient(
-        rgba(17, 17, 17, 0.4), 
-        rgba(17, 17, 17, 0.4)), url(../images/back-chocolate.jpg);
+    padding: 395px 16px 20px 16px;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.4),
+            rgba(17, 17, 17, 0.4)), url(../images/back-chocolate-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.sect1-container {
-   max-width: 1136px;
-   
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .sect1-container {
+        background-image: linear-gradient(rgba(17, 17, 17, 0.4),
+                    rgba(17, 17, 17, 0.4)), url(../images/back-chocolate-mob-2x.jpg);
+    }
 }
 
 .sect1-header {
     color: #FFF;
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 1.21;
-        letter-spacing: -0.03em;
-        max-width: 484px;
-        max-height: 102px;
-        margin-bottom: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
 }
 
 .sect1-button-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 .sect1-button {
@@ -157,7 +157,7 @@ button {
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
-    padding: 14px 40px;
+    padding: 12px 28px;
     border-radius: 100px;
     border: none;
     margin-right: 14px;
@@ -173,10 +173,11 @@ button {
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
-    padding: 14px 40px;
+    padding: 12px 28px;
     border-radius: 100px;
     border: 1px solid #FFF;
     background-color: transparent;
+    margin-bottom: 32px;
 }
 
 .sect1-link1:hover, .sect1-link1:focus {
@@ -882,4 +883,27 @@ button {
      opacity: 1;
      visibility: visible;
      pointer-events: auto;
+ }
+
+
+ /* Tablet */
+ @media screen and (min-width: 768px) {
+        .container {
+        width: 768px;
+        padding: 0 32px;
+        }
+
+        .sect1 {
+        background-image: linear-gradient(rgba(17, 17, 17, 0.4),
+                    rgba(17, 17, 17, 0.4)), url(../images/back-chocolate-tabl.jpg);
+        }
+ }
+
+
+ /* Desktop */
+ @media screen and (min-width: 1024px) {
+        .sect1 {
+                background-image: linear-gradient(rgba(17, 17, 17, 0.4),
+                        rgba(17, 17, 17, 0.4)), url(../images/back-chocolate.jpg);
+            }
  }
